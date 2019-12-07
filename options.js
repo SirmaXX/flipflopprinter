@@ -1,4 +1,6 @@
 'use strict';
+
+//this function set pages from page count
 function getpages() {
 var text = "";
 var i; 
@@ -7,8 +9,9 @@ const backpages = [];
 const lastnumber = document.getElementById("myText").value;
 var frontpgs=document.getElementById("front");
 var backpgs=document.getElementById("back");
-var numbers = /^[0-9]+$/;
 
+//its control for user inputs
+var numbers = /^[0-9]+$/;
 if(lastnumber.match(numbers))
       {
       for (i = 0; i <  lastnumber; i++) {
@@ -30,7 +33,6 @@ if(lastnumber.match(numbers))
  
 
   //they are outputs
-
 frontpgs.innerHTML = frontpages.filter(checkpages);
 backpgs.innerHTML = backpages.filter(checkpages);
 
@@ -38,7 +40,7 @@ backpgs.innerHTML = backpages.filter(checkpages);
 
 
 
-
+  //this function hekp to set pages interval
 function intervalpages(){
 var text="";
   var first = document.getElementById("first").value;
