@@ -5,7 +5,7 @@
   "permissions": ["activeTab", "declarativeContent", "storage"],
   "options_page": "options.html",
   "background": {
-    "scripts": ["background.js"],
+    "scripts": ["background.js","style.css"],
     "persistent": false
   },
   "page_action": {
@@ -23,5 +23,5 @@
     "48": "images/48x48.png",
     "128": "images/48x48.png"
   },
-  "manifest_version": 2
+  "manifest_version": 1
 }

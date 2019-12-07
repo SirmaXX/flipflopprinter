@@ -5,17 +5,38 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="author" content="Deniz Balcı , SirmaXX">
      <link rel="icon" href="images/16x16.png" type="image/x-icon">
+     <link rel="stylesheet" href="style.css">
    <title >Flipflopprinter</title>
   </head>
   <body>
-    <input type="text" id="myText" value="page count">
-    <button onclick="getpages()">show pages</button>
+      <h1 class="title">FlipFlopPrinter</h1>
+      <div class="flex-container">
+    
+      <br>
+    <div class="mainborder ">
+        <h4>Page count </h4>
+    <input type="text" class="textbox" id="myText" value="page count">
+    <button class="button" onclick="getpages()">show pages</button>
     <p id="demo"></p>
-    <br> 
     <p>ön sayfalar/front pages</p>
-    <p id="front"></p>
+    <div> <p id="front"></p></div>
     <p>Arkasayfalar / backpages</p>
-    <p id="back"></p>
+    <div><p id="back"></p></div>
+  </div>
+
+  <div class="mainborder ">
+      <h4>İnterval Pages</h4>
+      <input type="text" class="textbox" id="first" value="firstpage">
+      <input type="text" class="textbox" id="last" value="lastpage">
+      <button class="button" onclick="intervalpages()">show pages</button>
+      <br><br><br>
+      <p>ön sayfalar/front pages</p>
+      <div> <p id="frontpgs"></p></div>
+      <p>Arkasayfalar / backpages</p>
+      <div> <p id="backpgs"></p></div>
+    </div>
+
+    </div>
   </body>
   <script src="options.js"></script>
 </html>
