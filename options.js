@@ -1,4 +1,3 @@
-
 'use strict';
 function getpages() {
 var text = "";
@@ -34,17 +33,10 @@ if(lastnumber.match(numbers))
 
 frontpgs.innerHTML = frontpages.filter(checkpages);
 backpgs.innerHTML = backpages.filter(checkpages);
-copyText(frontpages);
 
 }
 
-function copyText(x) {
-  var frontnumbers=x.slice();
-  var copy = JSON.stringify(frontnumbers)
-  document.execCommand("copy");
-  console.log(copy);
-  alert("Copied the text: " +JSON.stringify(copy));
-}
+
 
 
 function intervalpages(){

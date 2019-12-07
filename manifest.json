@@ -1,11 +1,11 @@
 {
   "name": "flipflopprinter",
-  "version": "1.0",
+  "version": "0.1",
   "description": "support to the print two side of paper which printers does not have support for dual printing",
-  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "permissions": ["contextMenus"],
   "options_page": "options.html",
   "background": {
-    "scripts": ["background.js","style.css"],
+    "scripts": ["options.js","style.css"],
     "persistent": false
   },
   "page_action": {
@@ -23,5 +23,5 @@
     "48": "images/48x48.png",
     "128": "images/48x48.png"
   },
-  "manifest_version": 1
+  "manifest_version":2
 }
